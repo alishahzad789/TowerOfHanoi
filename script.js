@@ -3,6 +3,7 @@ var RedoStack=[]
 var TotalDiscs=3;
 var timer=document.getElementsByClassName("timer")[0]
 var count=0;
+var id;
 GenerateNewDiscs=(N)=>{
     let width="250";
     let height=" 55";
@@ -172,7 +173,7 @@ function LoseStop(){
 function StartTimer(min,sec,watch){
   let timer=(min*60)+sec;
 
-  const id=setInterval(() => {
+    id=setInterval(() => {
     minutes = parseInt(timer / 60, 10);
     seconds = parseInt(timer % 60, 10);
     minutes = minutes < 10 ? "0" + minutes : minutes;
@@ -212,6 +213,7 @@ function START(){
     sec=parseInt(seconds,10);
     console.log(min,":",sec);
     let stepcount=document.getElementById("steps");
+    clearInterval(id);
     stepcount.innerHTML="0";
     StartTimer( min,sec,timer);
 }
