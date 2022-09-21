@@ -27,8 +27,8 @@
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    min-width: 10px;
-    max-width: 10px;
+    min-width: 30px;
+    max-width: 50px;
     align-items: center;
     flex-direction: column-reverse;
 }
