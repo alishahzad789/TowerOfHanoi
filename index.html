@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towe of Hanoi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="test.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <h3>Steps:</h3>
+        <h3 id="steps" >0</h3>
+        <button class="undobtn" onclick="UNDO()">UNDO</button>
+        <button class="redobtn" onclick="REDO()">REDO</button>
+        <h3>Discs</h3>
+        <input value="3" id="input">
+        <h3>MINUTES</h3>
+        <input  id="minutes" value="10"/>
+        <h3>SECONDS</h3>
+        <input  id="seconds" value="5" />
+        <button class="startbtn" onclick="START()">START</button>
+    </div>
+   
+
+    <div class="backdrop">
+        <div class="box" >
+           <div class=" danda danda1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <!-- <div class="disc1 noDrop" draggable="true" ondragstart="drag(event)"></div> -->
+           </div>
+        </div>
+        <div class="box">
+            <div class=" danda danda2" ondrop="drop(event)"  ondragover="allowDrop(event)">
+             <!-- <div class="disc2 noDrop" draggable="true" ondragstart="drag(event)"></div> -->
+            </div>
+         </div> 
+        <div class="box">
+            <div class=" danda danda3" ondrop="drop(event)" ondragover="allowDrop(event)">
+             <!-- <div class="disc3 noDrop" draggable="true" ondragstart="drag(event)"></div> -->
+            </div>
+         </div>
+    </div>
+     <div class="clock">
+        <h3>TIMER</h3>
+        <h1 class="timer" >0:00</h1>
+
+     </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

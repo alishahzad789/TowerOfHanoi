@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+.backdrop{
+
+    background-color: rgb(121, 172, 231);
+    min-height:500px;
+    height: max-content;
+    display: flex;
+    width:auto;
+    justify-content:center
+}
+.box{
+    background-color:rgb(121, 172, 231);
+    height: 500px;
+    width: 350px;
+    margin-top:10px ;
+    margin-left:100px ;
+    display:flex;
+    justify-content: center;
+}
+.danda{
+    background-color: brown;
+    height: 90%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    min-width: 10px;
+    max-width: 10px;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+/* .disc1{
+    height: 40px;
+    width: 250px;
+    background-color: chartreuse;
+    border-radius: 30px;
+}
+.disc2{
+    height: 35px;
+    width: 200px;
+    background-color: rgb(243, 36, 36);
+}
+.disc3{
+    height: 30px;
+    width: 150px;
+    background-color: rgb(255, 9, 222);
+} */
+.disc4{
+    height: 40px;
+    width: 200px;
+    background-color: rgb(24, 35, 138);
+}
+.undobtn {
+  background-color: red;
+  width: 100px;
+  height:50px ;
+
+}
+.redobtn{
+    background-color: red;
+    width: 100px;
+    height:50px ;
+
+}
+.startbtn{
+    background-color: red;
+    width: 100px;
+    height:50px ;
+}
+.header{
+    display: flex;
+    justify-content:space-evenly;
+    height: 50px;
+    background-color: rgb(36, 32, 58);
+}
+.noDrop{
+    border-radius: 30px;
+}
+#input{
+    text-align: center;
+}
+.header > h3{
+    color: aliceblue;
+    margin-top: 10px;
+}
+.timer{
+    background-color: aqua;
+    width: fit-content;
+}
+.clock{
+    margin: 20px;
+    margin-left: 40%;
+    justify-content: center;
+}
+
+input{
+    text-align: center;
+}
